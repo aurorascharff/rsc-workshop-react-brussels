@@ -2,7 +2,6 @@
 
 import { useSearchParams } from 'next/navigation';
 import React from 'react';
-
 import { SearchIcon, SpinnerIcon } from './ui/icons';
 
 export default function Search() {
