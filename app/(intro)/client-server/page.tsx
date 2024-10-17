@@ -5,6 +5,7 @@ import ClientComponent from './_components/ClientComponent';
 import ServerComponent from './_components/ServerComponent';
 
 export default function ClientServerPage() {
+  // this function will have a hidden api endpoint created and can be called from the client
   async function mutateData() {
     'use server';
 
