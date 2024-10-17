@@ -19,6 +19,7 @@ export default function ContactButton({ contact }: { contact: Contact }) {
         'flex w-full items-center justify-between gap-4 overflow-hidden whitespace-pre rounded-lg p-2 hover:no-underline',
       )}
       href={`/contacts/${contact.id}?q=${q}`}
+      // href={routes.contactId({ contactId: contact.id, search: { q } })}
     >
       {contact.first || contact.last ? (
         <>
