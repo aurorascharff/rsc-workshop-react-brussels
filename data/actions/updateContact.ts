@@ -11,15 +11,7 @@ export async function updateContact(contactId: string, formData: FormData) {
   const data = Object.fromEntries(formData);
 
   await prisma.contact.update({
-    data: {
-      avatar: data.avatar as string,
-      email: data.email as string,
-      first: data.first as string,
-      github: data.github as string,
-      last: data.last as string,
-      notes: data.notes as string,
-      position: data.position as string,
-    },
+    data,
     where: { id: contactId },
   });
 
