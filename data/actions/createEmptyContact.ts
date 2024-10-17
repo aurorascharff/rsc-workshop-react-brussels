@@ -10,5 +10,5 @@ export async function createEmptyContact() {
   });
 
   revalidatePath('/');
-  redirect(`/contacts/edit/${contact.id}`);
+  redirect(`/contacts/${contact.id}/edit`);
 }
